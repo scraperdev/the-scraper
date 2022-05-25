@@ -1,6 +1,6 @@
-# the-scraper
+# The Scraper
 
-## Features:
+## If you are going to skid this, at least credit me in one way or another.
 
 ## General features:
 
@@ -43,3 +43,7 @@ All of this data is stored in the db.
 # Setup:
 
 I will probably write this later. But for now, you are on your own. Everything you need to set it up is here.
+
+# Help:
+
+Make an issue on the github repo.
