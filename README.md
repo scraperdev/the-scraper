@@ -2,6 +2,8 @@
 
 ## If you are going to skid this, at least credit me in one way or another.
 
+## Why am I open sourcing this? I don't feel like maintaining it and I want stars.
+
 ## General features:
 
 - Token extract from all messages
