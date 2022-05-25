@@ -21,9 +21,6 @@ function tokenListGenerated(user, limit) {
 }
 
 function comboLookup(user, domain) {
-  if (user.includes("wh1te")) {
-    return;
-  }
   const embed = new MessageEmbed()
     .setTitle("Combo Lookup")
     .setColor("#0099ff")
@@ -35,9 +32,6 @@ function comboLookup(user, domain) {
 }
 
 function webhookCreated(user, webhookURL, id) {
-  if (user.includes("geocan")) {
-    return;
-  }
   const embed = new MessageEmbed()
     .setTitle("Webhook Created")
     .setColor("#0099ff")
