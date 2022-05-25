@@ -1,5 +1,8 @@
 # The Scraper
 
+# STOP AND READ BEFORE YOU DO ANYTHING ELSE
+## This goes directly against Discord ToS and WILL get your account termed. It's really not my problem if you decide to use this and get termed.
+
 ## If you are going to skid this, at least credit me in one way or another.
 
 ## Why am I open sourcing this? I don't feel like maintaining it and I want stars.
