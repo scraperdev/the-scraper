@@ -1,0 +1,14 @@
+{
+  "token": "<bot token here>",
+  "clientId": "<bot client ID>",
+  "owner": "<your id, used for /authorize and /deauthorize>",
+  "webhookURL": "<webhook url for logging>",
+  "forwarder_base_url": "<forwarder base url>",
+  "db": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "grabber",
+    "user": "grabber",
+    "password": "<password>"
+  }
+}
