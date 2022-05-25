@@ -12,6 +12,7 @@ const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
   ws: { properties: { $browser: "Discord iOS" } },
 });
+
 const config = require("./config.json");
 // mysql
 const con = require("./db.js");

@@ -42,7 +42,102 @@ All of this data is stored in the db.
 
 # Setup:
 
-I will probably write this later. But for now, you are on your own. Everything you need to set it up is here.
+## You will need
+
+- Linux cloud server. For this tutorial I will be assuming you are running something debian based.
+- A domain (if you want to use the forwarder)
+- A discord bot account
+
+### Step 1
+
+SSH into the server and run the following commands:
+
+```
+sudo apt-get update
+sudo apt-get install mariadb-server curl git
+curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt-get install nodejs -y
+```
+
+Now, clone the repo by doing:
+
+```
+git clone https://github.com/kogeki/the-scraper.git
+cd the-scraper
+```
+
+Type `mysql` to start a MySQL interactive shell.
+
+Then, run the following commands:
+
+```
+CREATE DATABASE grabber;
+CREATE USER 'grabber'@'localhost' IDENTIFIED BY 'grabber';
+GRANT ALL PRIVILEGES ON grabber.* TO 'grabber'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+Then, run the following commands:
+
+```
+mysql -u <USERNAME> -p <PASSWORD> grabber < setup.sql
+```
+
+Now, authorize your guild by running the following command:
+
+```
+INSERT INTO guilds (guild_id, authorized) VALUES (<YOUR GUILD ID>, 1);
+```
+
+Now, edit the config by doing:
+
+```
+nano config.json.example
+```
+
+For `token`, put your discord bot token.
+
+For `clientId` put your discord bot client id.
+
+For `guildId` put your discord guild id (the one you want to use the bot in).
+
+For `owner` put your discord id.
+
+For `webhookURL` put your discord webhook url for logs.
+
+For `forwarder_base_url` put your domain that you want to use WITHOUT the `http://` or `https://`.
+
+For `host` put in your MySQL host. Usually `localhost`.
+
+For `user` put in your MySQL user. Usually `root` (not recommended).
+
+For `port` put in your MySQL port. Usually `3306`.
+
+For `password` put in your MySQL password.
+
+For `database` put in your MySQL database. It is `grabber` unless you changed it.
+
+Once you are done, save and exit, and run the following commands:
+
+```
+mv config.json.example config.json
+```
+
+Since the bot uses slash commands, you will need to invite it with this URL:
+
+```
+https://discord.com/api/oauth2/authorize?client_id=<YOUR BOT CLIENT ID>&permissions=8&scope=bot%20applications.commands
+```
+
+Then, run the following commands:
+
+```
+npm install
+node deploy-commands.js
+node index.js
+```
+
+Done!
 
 # Help:
 
