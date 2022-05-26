@@ -11,7 +11,7 @@
 
 - Token extract from all messages
 - Combo scraper (works with bby, hazard, pirate and any other stealer just ask me I will add it)
-- Webhook forwarder (unnukable)
+- Webhook forwarder (unnukable) https://github.com/kogeki/the-forwarder
 - HazardV2 Zip file auto unpack
 - PirateStealer Zip auto unpack
 - bby cookie file auto convert
