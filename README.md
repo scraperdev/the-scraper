@@ -10,7 +10,7 @@
 ## General features:
 
 - Token extract from all messages
-- Combo scraper (works with bby, hazard, pirate and any other stealer just ask me I will add it)
+- Combo scraper (works with bby, hazard, pirate)
 - Webhook forwarder (unnukable) https://github.com/kogeki/the-forwarder
 - HazardV2 Zip file auto unpack
 - PirateStealer Zip auto unpack
