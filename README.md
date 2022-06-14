@@ -2,6 +2,7 @@
 
 # STOP AND READ BEFORE YOU DO ANYTHING ELSE
 ## This goes directly against Discord ToS and WILL get your account termed. It's really not my problem if you decide to use this and get termed.
+## Also, if you need help, make an issue and do NOT dm me on Discord.
 
 ## If you are going to skid this, at least credit me in one way or another.
 
