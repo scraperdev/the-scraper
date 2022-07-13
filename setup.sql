@@ -1,5 +1,5 @@
 
-CREATE DATABASE IF NOT EXISTS `grabber` 
+CREATE DATABASE IF NOT EXISTS `grabber`;
 USE `grabber`;
 
 CREATE TABLE IF NOT EXISTS `combos` (
