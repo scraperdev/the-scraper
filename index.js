@@ -413,8 +413,8 @@ function tokenExtract(tokens) {
   // matches = [...new Set(matches)];
   // matches = matches.filter((x) => x != null);
 
-  const regex = /[\w-]{24}\.[\w-]{6}\.[\w-]{25,110}/gm;
-
+  const regex = /[\w-][\w-][\w-]{24}\.[\w-]{6}\.[\w-]{26,110}/gm
+  
   var matches = tokens.match(regex);
 
   if (matches != null) {
