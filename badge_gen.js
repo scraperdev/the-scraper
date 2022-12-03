@@ -9,7 +9,7 @@ const House_Balance = 256; // 1 << 8
 const Early_Supporter = 512; // 1 << 9
 const Bug_Hunter_Level_2 = 16384; // 1 << 14
 const Verified_Bot_Developer = 131072; // 1 << 17
-const Certified_Moderator = 262144; // 1 >> 18
+const Certified_Moderator = 262144; // 1 << 18
 const Active_Deveoper = 4194304; // 1 << 22
 // emojis to represent flags
 const { emojis } = require("./emojis.js");
