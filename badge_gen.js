@@ -9,6 +9,7 @@ const House_Balance = 256;
 const Early_Supporter = 512;
 const Bug_Hunter_Level_2 = 16384;
 const Verified_Bot_Developer = 131072;
+const Active_Deveoper = 4194304;
 // emojis to represent flags
 const { emojis } = require("./emojis.js");
 
@@ -45,6 +46,9 @@ function getEmojis(flags) {
   }
   if (flags & Verified_Bot_Developer) {
     badges += emojis.Verified_Bot_Developer_Emoji;
+  }
+  if (flags & Active_Developer) {
+    badges += emojis.Active_Developer;
   }
   if (badges == "" || flags == 32 || flags == 16) {
     badges = 0;
