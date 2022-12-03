@@ -12,5 +12,6 @@ const emojis = {
   Bug_Hunter_Level_2_Emoji: "<:Bug_Hunter_Level_2_Emoji:969829723985285171> ",
   Verified_Bot_Developer_Emoji:
     "<:Verified_Bot_Developer_Emoji:969829723880448030>",
+  Active_Developer: "<:Active_Developer:1048683886093283450>",
 };
 module.exports = { emojis };
