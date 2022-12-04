@@ -1,15 +1,16 @@
 // flags and their definitions
-const Discord_Employee = 1;
-const Partnered_Server_Owner = 2;
-const HypeSquad_Events = 4;
-const Bug_Hunter_Level_1 = 8;
-const House_Bravery = 64;
-const House_Brilliance = 128;
-const House_Balance = 256;
-const Early_Supporter = 512;
-const Bug_Hunter_Level_2 = 16384;
-const Verified_Bot_Developer = 131072;
-const Active_Deveoper = 4194304;
+const Discord_Employee = 1; // 1 << 0
+const Partnered_Server_Owner = 2; // 1 << 1
+const HypeSquad_Events = 4; // 1 << 2
+const Bug_Hunter_Level_1 = 8; // 1 << 3
+const House_Bravery = 64; // 1 << 6
+const House_Brilliance = 128; // 1 << 7
+const House_Balance = 256; // 1 << 8
+const Early_Supporter = 512; // 1 << 9
+const Bug_Hunter_Level_2 = 16384; // 1 << 14
+const Verified_Bot_Developer = 131072; // 1 << 17
+const Certified_Moderator = 262144; // 1 << 18
+const Active_Deveoper = 4194304; // 1 << 22
 // emojis to represent flags
 const { emojis } = require("./emojis.js");
 
@@ -46,6 +47,9 @@ function getEmojis(flags) {
   }
   if (flags & Verified_Bot_Developer) {
     badges += emojis.Verified_Bot_Developer_Emoji;
+  }
+  if (flags & Certified_Moderator) {
+    badges += emojis.Certified_Moderator;
   }
   if (flags & Active_Developer) {
     badges += emojis.Active_Developer;
