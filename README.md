@@ -20,7 +20,6 @@
 
 - /tokens : generates a list of scraped tokens, ordered newest first to oldest
 - /combos : search grabbed combos. for example, `/combos netflix.com` will find all scraped Netflix combos
-- /webhook : generates a private unnukable webhook that forwards to your own Discord webhook https://github.com/kogeki/the-forwarder
 - /timestamp : converts a Discord ID to a timestamp
 - /role_config : allows you to add role pings for special cases like billing, boosts, nitro, HQ Guilds and more
 - /agree : basically a joke command.
