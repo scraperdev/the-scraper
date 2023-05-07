@@ -1,12 +1,6 @@
 # The Scraper
 
-# STOP AND READ BEFORE YOU DO ANYTHING ELSE
-## This goes directly against Discord ToS and WILL get your account termed. It's really not my problem if you decide to use this and get termed.
-## Also, if you need help, make an issue and do NOT dm me on Discord.
-
-## If you are going to skid this, at least credit me in one way or another.
-
-## Why am I open sourcing this? I don't feel like maintaining it and I want stars.
+## This project is now closed. If you are still logging in 2023, that's just sad ngl. Don't waste your time on cool Discord @'s or combo stealing and instead do something cool. I will leave this repo up for preservation purposes.
 
 ## General features:
 
